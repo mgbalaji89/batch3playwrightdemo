@@ -5,6 +5,6 @@ const baseURL = 'https://testautomationpractice.blogspot.com/';
 test('Check the title of the page ', async( { page} ) => {
     await page.goto(baseURL);
     //Purposely give the wrong actual title to check the test case failiure
-    const actualTitle = 'Automation Testing Practiceee';
+    const actualTitle = 'Automation Testing Practice';
     await expect(page).toHaveTitle(actualTitle);
 });
